@@ -53,3 +53,6 @@ wgs-assembler (http://wgs-assembler.sourceforge.net)
 
 ==================================================================================================
 
+LICENSE
+
+See LICENSE.pdf for academic usage license, or request a commerical license at http://genome.leibniz-fli.de/software/index.php (wbriest@fli-leibniz.de)
