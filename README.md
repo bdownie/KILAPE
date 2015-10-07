@@ -1,7 +1,8 @@
+#LICENSE
+The software was developed at the Leibniz Institute on Aging - Fritz Lipmann Institute (FLI; http://www.leibniz-fli.de/) under a mixed licensing model. Researchers at academic and non-profit organizations can use KILAPE using the included license, while for-profit organizations are required to purchase a license (http://genome.leibniz-fli.de/software/index.php). By downloading the package you agree with conditions of the FLI Software License Agreement for Academic Non-commercial Research (LICENSE.pdf).
+
 # KILAPE
 K-masking and Iterative Local Assembly of Paired Ends
-
-NOTE: This version of KILAPE is in beta and is provided AS-IS with no warranty or guarantee. Consult the LICENSE file for full details. Please send any bugs or requests for clarification to bdownie@fli-leibniz.de
 
 KILAPE (K-masking and Iterative Local Assembly of Paired Ends) is an automated scaffolding and gap filling software pipeline which predicts repetitive elements in Next Generation Sequencing read libraries without resorting to a reference sequence.  The package of KILAPE consists of pre-compiled C++ program modules as well as a set of Perl scripts for data preparation and for processing within the pipeline itself.
 
@@ -50,9 +51,3 @@ velvet (http://www.ebi.ac.uk/~zerbino/velvet/)
 wgs-assembler (http://wgs-assembler.sourceforge.net)
 - Required for local assembly functionality
 - Local assembly function is currently in beta and not supported.
-
-==================================================================================================
-
-LICENSE
-
-See LICENSE.pdf for academic usage license, or request a commerical license at http://genome.leibniz-fli.de/software/index.php (wbriest@fli-leibniz.de)
