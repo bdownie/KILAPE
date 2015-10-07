@@ -6,6 +6,8 @@ K-masking and Iterative Local Assembly of Paired Ends
 
 KILAPE (K-masking and Iterative Local Assembly of Paired Ends) is an automated scaffolding and gap filling software pipeline which predicts repetitive elements in Next Generation Sequencing read libraries without resorting to a reference sequence.  The package of KILAPE consists of pre-compiled C++ program modules as well as a set of Perl scripts for data preparation and for processing within the pipeline itself.
 
+Questions and bug reports should be addressed to the software developer Bryan Downie (bryand@pobox.com).
+
 ==================================================================================================
 
 INSTALLATION:
