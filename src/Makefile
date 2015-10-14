@@ -6,12 +6,15 @@ CFLAGS= -O3 -Wall
 OMP_FLAGS=-fopenmp -lgomp
 #OMP_LINK_FLAGS=-lgomp
 
-all: adjust_graph PrepareLocalAssemblies BuildGraphFromSAM BuildScaffolds Kmasker filterSamOnCount countSamSites RestoreFullContigs scaffolder_int
+all: adjust_graph PrepareLocalAssemblies BuildGraphFromSAM BuildScaffolds Kmasker filterSamOnCount countSamSites RestoreFullContigs scaffolder_int DistributeOrphanedContigs
 	mkdir -p ../bin
-	mv scaffolder_int adjust_graph BuildScaffolds BuildGraphFromSAM PrepareLocalAssemblies Kmasker filterSamOnCount countSamSites RestoreFullContigs ../bin
+	mv scaffolder_int adjust_graph BuildScaffolds BuildGraphFromSAM PrepareLocalAssemblies Kmasker filterSamOnCount countSamSites RestoreFullContigs DistributeOrphanedContigs ../bin
 
 adjust_graph: adjust_graph.cpp
 	${CC} ${CFLAGS} ${INCLUDE} -o adjust_graph adjust_graph.cpp 
+
+DistributeOrphanedContigs: DistributeOrphanedContigs.cpp
+	${CC} ${CFLAGS} ${INCLUDE} -o DistributeOrphanedContigs DistributeOrphanedContigs.cpp 
 
 BuildScaffolds: BuildScaffolds.cpp
 	${CC} ${CFLAGS} ${INCLUDE} -o BuildScaffolds BuildScaffolds.cpp 
